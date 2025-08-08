@@ -642,7 +642,7 @@ export default [
                     <li>No Binarie {parseFloat(charts['gender_no_binarie'].data.map(item => item.value) * 100).toFixed(1)}%</li>
                     <li>Queer {parseFloat(charts['gender_queer'].data.map(item => item.value) * 100).toFixed(2)}%</li>
                     <li>Trans {parseFloat(charts['gender_trans'].data.map(item => item.value) * 100).toFixed(2)}%</li>
-                    <li>Lesbiana {parseFloat(charts['gender_lesbiana'].data.map(item => item.value) * 100).toFixed(2)}%</li>
+                    <li>Lesbiana {parseFloat(charts['gender_fluido'].data.map(item => item.value) * 100).toFixed(2)}%</li>
                     <li>Agénero {parseFloat(charts['gender_agenero'].data.map(item => item.value) * 100).toFixed(2)}%</li>
                 </ul>
                 <p>Como es de esperar, las inequidades históricas y sistemáticas por género, se sostienen.</p>
