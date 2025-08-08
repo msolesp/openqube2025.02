@@ -42,13 +42,14 @@ export default [
                         <li><a href="https://sueldos.openqube.io/encuesta-sueldos-2023.01/" target="_blank" rel="noopener noreferrer">2023.01 </a></li>
                         <li><a href="https://sueldos.openqube.io/encuesta-sueldos-2023.02/" target="_blank" rel="noopener noreferrer">2023.02 </a></li>
                         <li><a href="https://sueldos.openqube.io/encuesta-sueldos-2024.01/" target="_blank" rel="noopener noreferrer">2024.01 </a></li>
+                        <li><a href="https://sueldos.openqube.io/encuesta-sueldos-2025.01/" target="_blank" rel="noopener noreferrer">2025.01 </a></li>
                     </ul>
                 </p>
                 <p>
                     Con la intención de presentar a nuestra comunidad los resultados de forma más accesible, seleccionamos algunos datos estadísticos que consideramos relevantes. Para una mejor comprensión de los mismos, recomendamos leer el apartado de <a href="#Metodologia">Metodología</a>.
                 </p>
                 <p>
-                    A continuación te mostramos los resultados del nuevo análisis para diciembre 2024 - enero 2025.
+                    A continuación te mostramos los resultados del nuevo análisis para junio - julio 2025.
                 </p>
                 <br />
                 <div className='authors-wrapper'>
@@ -76,7 +77,7 @@ export default [
             <div>
                 <center>
                     <p><strong>{charts['total_surveyed']}</strong> fueron las respuestas totales en la República Argentina.</p>
-                    <p><strong>{charts['total_analyzed_surveyed']}</strong> respuestas fueron consideradas en el presente análisis, es decir un <strong>{parseInt(charts['total_analyzed_surveyed'] / charts['total_surveyed'] * 10000) / 100}%</strong> del total.</p>
+                    <p><strong>{charts['total_analyzed_surveyed']}</strong> respuestas fueron consideradas en el presente análisis, es decir un <strong>{Math.round(charts['total_analyzed_surveyed'] / charts['total_surveyed'] * 100)}%</strong> del total.</p>
                 </center>
             </div>
         ),
@@ -135,7 +136,7 @@ export default [
                                 description: (<p>En esta sección, los datos fueron agrupados por rangos de años, en conjuntos arbitrarios.
                                     <br>
                                     </br>
-                                    Se observan valores similares a los de la <a href="https://sueldos.openqube.io/encuesta-sueldos-2024.01/" target="_blank" rel="noopener noreferrer">encuesta anterior</a>.
+                                    Se observan valores similares a los de la <a href="https://sueldos.openqube.io/encuesta-sueldos-2025.01/" target="_blank" rel="noopener noreferrer">encuesta anterior</a>.
                                 </p>)
                             },
                         ],
@@ -196,7 +197,7 @@ export default [
                                 description: (
                                     <div>
                                         <p>
-                                            Aproximadamente el 30% de las personas encuestadas no ha finalizado estudios universitarios. La tendencia se mantiene respecto de la <a href="https://sueldos.openqube.io/encuesta-sueldos-2024.01/" target="_blank" rel="noopener noreferrer">encuesta anterior</a>.
+                                            Aproximadamente el 22% de las personas encuestadas no ha finalizado estudios universitarios.
                                         </p>
 
                                     </div>
@@ -1131,7 +1132,7 @@ export default [
 
                                 },
                                 caption: <p>Porcentaje de personas que tienen su sueldo dolarizado, ya sea de forma parcial o completa, y quienes no lo tienen.</p>,
-                                description: <p>El {parseFloat(charts['porcentaje_sueldo_dolarizado'].data.map(item => item.value) * 100).toFixed(0)}%  de las personas tiene su sueldo dolarizado, al menos de manera parcial. Esto representa una disminución del 2% respecto a la <a href="https://sueldos.openqube.io/encuesta-sueldos-2024.01/" target="_blank" rel="noopener noreferrer">encuesta anterior</a>.</p>,
+                                description: <p>El {parseFloat(charts['porcentaje_sueldo_dolarizado'].data.map(item => item.value) * 100).toFixed(0)}%  de las personas tiene su sueldo dolarizado, al menos de manera parcial. Esto representa una disminución del 2% respecto a la <a href="https://sueldos.openqube.io/encuesta-sueldos-2025.01/" target="_blank" rel="noopener noreferrer">encuesta anterior</a>.</p>,
                             },
                         ],
                     },
