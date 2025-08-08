@@ -1,0 +1,57 @@
+.recharts-cartesian-axis.yAxis {
+    width: 150%;
+    background-color: green;
+}
+
+.recharts-cartesian-axis-tick {    
+    font-size: 0.75rem;
+    /*font-family: Roboto, sans-serif;*/
+}
+
+.recharts-wrapper {
+    margin: 0 auto;
+}
+
+.recharts-legend-wrapper {
+    font-size: 0.85rem;
+    width: inherit !important;
+}
+
+.more-info-wrapper {
+    text-align: right;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+.more-info-link {
+    padding: 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 3px 0px;
+    font-size: 12px;
+    color: #763DFF;
+    text-decoration: none; 
+    transition: all ease-in-out 0.3s;
+}
+
+.more-info-link:hover {
+    box-shadow: rgba(0, 0, 0, 0.8) 1px 1px 3px 0px;
+    transition: all ease-in-out 0.3s
+}
+
+@media (max-width: 460px) {
+    .recharts-wrapper {
+        zoom: 60%;
+    }
+}
+
+@media (max-width: 421px) {
+    .recharts-wrapper {
+        zoom: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .recharts-y-axis .recharts-cartesian-axis-tick {
+      font-size: 10px;
+    }
+  }
