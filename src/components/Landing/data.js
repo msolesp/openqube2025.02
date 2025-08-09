@@ -317,7 +317,7 @@ export default [
                                 props: { ...historic_charts['historic_salary_medians'], xDataKey: 'publish_date', yDataKeys: ['Pesos Argentinos'], currency: 'AR$' },
                                 caption: <p>Serie histórica de salarios en ARS basada en encuestas anteriores de sysarmy.</p>,
                                 description: <p>
-                                    Desde junio de 2024 hasta enero de 2025 se registró en la República Argentina una inflación de <a target="_blank" rel="noopener noreferrer" href="https://calculadoradeinflacion.com/argentina.html?md=julio&ad=2023&mh=junio&ah=2024&q=100"> 27%</a> según el <a target="_blank" rel="noopener noreferrer" href="https://www.indec.gob.ar/">INDEC</a>. Según los datos históricos de esta encuesta, en aproximadamente el mismo intervalo de tiempo, la mediana salarial aumentó un 35%.
+                                    Desde enero de 2025 hasta julio de 2025 se registró en la República Argentina una inflación de <a target="_blank" rel="noopener noreferrer" href="https://calculadoradeinflacion.com/argentina.html?md=enero&ad=2025&mh=julio&ah=2025&q=100&s=cpi"> 15%</a> según el <a target="_blank" rel="noopener noreferrer" href="https://www.indec.gob.ar/">INDEC</a>. Según los datos históricos de esta encuesta, en aproximadamente el mismo intervalo de tiempo, la mediana salarial aumentó un 26%.
                                     <br></br>
                                     <br></br>
                                 </p>,
@@ -643,8 +643,8 @@ export default [
                     <li>No Binarie {parseFloat(charts['gender_no_binarie'].data.map(item => item.value) * 100).toFixed(1)}%</li>
                     <li>Queer {parseFloat(charts['gender_queer'].data.map(item => item.value) * 100).toFixed(2)}%</li>
                     <li>Trans {parseFloat(charts['gender_trans'].data.map(item => item.value) * 100).toFixed(2)}%</li>
-                    <li>Lesbiana {parseFloat(charts['gender_fluido'].data.map(item => item.value) * 100).toFixed(2)}%</li>
                     <li>Agénero {parseFloat(charts['gender_agenero'].data.map(item => item.value) * 100).toFixed(2)}%</li>
+                    <li>Género Fluido {parseFloat(charts['gender_fluido'].data.map(item => item.value) * 100).toFixed(2)}%</li>
                 </ul>
                 <p>Como es de esperar, las inequidades históricas y sistemáticas por género, se sostienen.</p>
 
@@ -965,7 +965,7 @@ export default [
                 title: 'Ajuste salarial',
                 data: [
                     {  // section
-                        title: 'Ajustes por inflación 2024',
+                        title: 'Ajustes por inflación 2025',
                         data: [
                             {  // tab
                                 title: '',
@@ -976,10 +976,10 @@ export default [
                                     isPercentual: true,
                                     isLogScale: false,
                                 },
-                                caption: 'Mediana de porcentaje de ajustes por inflación acumulados por género.',
+                                caption: 'Mediana de porcentaje de ajustes por inflación acumulados por género en los últimos 6 meses.',
                                 description: <>
                                     <p>
-                                        Como contraste, la inflación publicada por el <a href="https://www.indec.gob.ar/" target="_blank" rel="noopener noreferrer">INDEC</a> para el año 2024 fue de <strong>118%</strong>.
+                                        Como contraste, la inflación publicada por el <a href="https://www.indec.gob.ar/" target="_blank" rel="noopener noreferrer">INDEC</a> entre enero y julio de 2025 fue de <strong>15%</strong>.
                                     </p>
                                     <p>
                                         <small>
@@ -1205,7 +1205,7 @@ export default [
                         ],
                     },
                     {  // section
-                        title: 'Porcentajes de Ajuste por Inflación a la fecha (2024)',
+                        title: 'Porcentajes de Ajuste por Inflación a la fecha (2025)',
                         data: [
                             {  // tab
                                 title: '',
@@ -1216,7 +1216,7 @@ export default [
                                 </div>,
                                 description: (
                                     <div>
-                                        Inflación acumulada en 2024: <strong>118%</strong>.
+                                        Inflación acumulada en 2024: <strong>15%</strong>.
                                         <p>
                                             <small>
                                                 Es importante tomar este número con ciudado, ya que en muchos casos no es posible distinguir si el sueldo está dolarizado o no y posiblemente existan
