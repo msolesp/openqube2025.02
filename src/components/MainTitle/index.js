@@ -17,7 +17,7 @@ class MainTitle extends Component {
         <h1 className='main-title'>
           <span className='first-line'>Resultados de la</span><br />
           <span>Encuesta de Sueldos 2025.02</span><br />
-          <span alt="Segundo Semestre &trade;">Diciembre - Enero</span>
+          <span alt="Segundo Semestre &trade;">Junio - Julio</span>
         </h1>
       </div>
     )
